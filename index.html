@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio Hero</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">Portfolio</div>
+
+      <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">☰</div>
+
+      <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#portfolio" class="active">Portfolio</a>
+        <a href="#testimonial">Testimonial</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <canvas id="particles"></canvas>
+
+      <div class="hero-content">
+        <p class="intro">Hello — I am</p>
+        <h1>HARAM FATIMA</h1>
+        <p class="roles">
+          UX/UI Designer &nbsp; • &nbsp; Developing &nbsp; • &nbsp; Marketing
+        </p>
+        <a href="#services" class="btn">My Works</a>
+      </div>
+
+      <div class="hero-image">
+        <img src="./images/me.png" alt="Portrait" />
+      </div>
+    </section>
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+      <div class="section-title">
+        <span>01</span>
+        <h2>Services</h2>
+        <p>We work with you, Not for you</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-box">Product Design</div>
+        <div class="service-box">UX-UI Design</div>
+        <div class="service-box">Application Design</div>
+        <div class="service-box">Web Design</div>
+        <div class="service-box">Print Design</div>
+        <div class="service-box">App Design</div>
+        <div class="service-box">Full Branding</div>
+        <div class="service-box">Corporate</div>
+        <div class="service-box">Mockup Service</div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+      <div class="section-title">
+        <span>02</span>
+        <h2>About</h2>
+        <p>We work with you, Not for you</p>
+      </div>
+
+      <div class="about-content">
+        <div class="about-text">
+          <h3>About Me</h3>
+          <h4>I am Dynamic Creative Designer Photographer and Developer</h4>
+
+          <p>
+            Dynamic and detail-oriented professional with an M.Phil. in Computer
+            Science and diverse experience in administration, education,
+            hospitality, and culinary arts.
+          </p>
+
+          <p>
+            Adept at managing multiple responsibilities with efficiency,
+            creativity, and professionalism. Strong adaptability and a passion
+            for continuous learning.
+          </p>
+
+          <span class="signature">HARAM FATIMA</span>
+        </div>
+
+        <div class="about-image">
+          <img src="./images//profile me.png" alt="About" />
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS & SKILLS -->
+    <section id="skills">
+      <div class="section-title">
+        <span>03</span>
+        <h2>Skills</h2>
+        <p>We work with you, Not for you</p>
+      </div>
+      <div class="stats-skills">
+        <div class="stats">
+          <div class="stat-box">
+            <h3>117</h3>
+            <p>Happy Client</p>
+          </div>
+          <div class="stat-box">
+            <h3>20</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat-box">
+            <h3>16</h3>
+            <p>Award Wins</p>
+          </div>
+          <div class="stat-box">
+            <h3>156</h3>
+            <p>Project Complete</p>
+          </div>
+        </div>
+
+        <div class="skills">
+          <h3>My Skills</h3>
+
+          <div class="skill">
+            <div class="skill-title">
+              <span>Administrative</span>
+              <span>95%</span>
+            </div>
+            <div class="progress">
+              <span style="width: 90%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-title">
+              <span>Developing</span>
+              <span>90%</span>
+            </div>
+            <div class="progress">
+              <span style="width: 90%"></span>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-title">
+              <span>Design</span>
+              <span>88%</span>
+            </div>
+            <div class="progress">
+              <span style="width: 88%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-title">
+              <span>Teaching</span>
+              <span>84%</span>
+            </div>
+            <div class="progress">
+              <span style="width: 88%"></span>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-title">
+              <span>Hospitality & Culinary</span>
+              <span>85%</span>
+            </div>
+            <div class="progress">
+              <span style="width: 85%"></span>
+            </div>
+          </div>
+
+          <div class="follow">
+            <p>Follow Me</p>
+            <div class="socials">
+              <a href="#" style="color: #ff2d55"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" style="color: #ff2d55"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" style="color: #ff2d55"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" style="color: #ff2d55"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+      <div class="section-title">
+        <span>03</span>
+        <h2>Portfolio</h2>
+        <p>We work with you, Not for you</p>
+      </div>
+
+      <div class="portfolio-filter">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="print">Print</button>
+        <button data-filter="web">Web Design</button>
+        <button data-filter="mockup">Mockups</button>
+        <button data-filter="app">Applications</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-item web">
+          <img src="https://picsum.photos/500/400?1" alt="" />
+        </div>
+        <div class="portfolio-item print">
+          <img src="https://picsum.photos/500/400?2" alt="" />
+        </div>
+        <div class="portfolio-item mockup">
+          <img src="https://picsum.photos/500/400?3" alt="" />
+        </div>
+        <div class="portfolio-item app">
+          <img src="https://picsum.photos/500/400?4" alt="" />
+        </div>
+        <div class="portfolio-item web">
+          <img src="https://picsum.photos/500/400?5" alt="" />
+        </div>
+        <div class="portfolio-item print">
+          <img src="https://picsum.photos/500/400?6" alt="" />
+        </div>
+        <div class="portfolio-item mockup">
+          <img src="https://picsum.photos/500/400?7" alt="" />
+        </div>
+        <div class="portfolio-item app">
+          <img src="https://picsum.photos/500/400?8" alt="" />
+        </div>
+      </div>
+    </section>
+   <section class="testimonial" id="testimonial">
+<div class="section-title">
+        <span>04</span>
+        <h2>Testimonial</h2>
+        <p>We work with you, Not for you</p>
+      </div>
+  <p class="subtitle">We work with you, Not for you</p>
+
+  <div class="testimonial-slider">
+
+    <div class="testimonial-box">
+      <img src="./images/user.png" alt="User">
+      <h3>Zhon Williams</h3>
+      <small>CEO - SoftHopper</small>
+      <p>
+        It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at its layout.
+      </p>
+    </div>
+
+    <div class="testimonial-box">
+      <img src="https://htmlguru.net/intimate/assets/demo/assets/images/testimonail/1.png" alt="User">
+      <h3>Michel rob</h3>
+      <small>Marketing Head - Brandify</small>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      </p>
+    </div>
+
+    <div class="testimonial-box">
+      <img src="data:image/jpeg;base64,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" alt="User">
+      <h3>Sarah Parker</h3>
+      <small>Founder - DevCore</small>
+      <p>
+        Ipsum passages, and more recently with desktop publishing software.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+    <section class="news" id="news">
+      <h2><span>06</span> Latest News</h2>
+      <p class="subtitle">We work with you, Not for you</p>
+
+      <div class="news-grid">
+        <div class="news-card">
+          <img
+            src="https://images.unsplash.com/photo-1499914485622-a88fac536970?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bGFwdG9wfGVufDB8fDB8fHww"
+          />
+          <p class="date">Dec 25, 2021 - WordPress</p>
+          <h3>Get the best price of taxi in your Town.</h3>
+        </div>
+
+        <div class="news-card">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1683121716061-3faddf4dc504?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHx8MA%3D%3D"
+          />
+          <p class="date">Dec 25, 2021 - WordPress</p>
+          <h3>Get the best price of taxi in your Town.</h3>
+        </div>
+
+        <div class="news-card">
+          <img
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRlY2h8ZW58MHx8MHx8fDA%3D"
+          />
+          <p class="date">Dec 25, 2021 - WordPress</p>
+          <h3>Get the best price of taxi in your Town.</h3>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="'contact">
+      <h2><span>07</span> Contact</h2>
+      <p class="subtitle">Don't Hesitate To Contact With Us</p>
+
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea placeholder="Anything that we can help you?"></textarea>
+        <button>Send Me</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-wraper">
+        <div class="logo">Portfolio</div>
+        <div class="quick-links">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#portfolio" class="active">Portfolio</a>
+          <a href="#testimonial">Testimonial</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <p>📧 sara.ch6668@gmail.com</p>
+        <p>📞 +44 7346 483645</p>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById("navMenu");
+        const hamburger = document.getElementById("hamburger");
+
+        nav.classList.toggle("show");
+
+        if (nav.classList.contains("show")) {
+          hamburger.innerHTML = "✖";
+        } else {
+          hamburger.innerHTML = "☰";
+        }
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('.testimonial-slider').slick({
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
+});
+</script>
+
+  </body>
+</html>
