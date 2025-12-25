@@ -1,0 +1,551 @@
+/* =======================
+   GLOBAL STYLES
+======================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+
+/* =======================
+   NAVBAR
+======================= */
+/* .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d0d0f;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.navbar nav a {
+  color: #fff;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+*/
+.navbar .logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+}
+ .navbar nav a:hover {
+  color: #ff2d55;
+} 
+
+.navbar nav a.active {
+  color: #ff2d55;
+} 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d0d0f;
+  z-index: 1000;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #fff;
+    width: 340px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  nav a {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    color: #000;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* =======================
+   SECTION TITLE
+======================= */
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title span {
+  color: #ff2d55;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.section-title h2 {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 32px;
+}
+
+.section-title p {
+  margin-top: 10px;
+  color: #777;
+}
+
+/* =======================
+   HERO SECTION
+======================= */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 120px 10% 0;
+  background: #0d0d0f;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+#particles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-content,
+.hero-image {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  color: #bbb;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 30px;
+  background: #ff2d55;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  filter: grayscale(100%);
+}
+
+/* =======================
+   SERVICES
+======================= */
+.services {
+  padding: 80px 10%;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.service-box {
+  padding: 25px;
+  background: #f7f7f7;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.service-box:hover {
+background: #ff2d55;
+ color: #fff;
+}
+
+.service-box.active {
+  background: #ff2d55;
+  color: #fff;
+}
+
+/* =======================
+   ABOUT
+======================= */
+.about {
+  padding: 80px 10%;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.signature {
+  font-family: "Pacifico", cursive;
+  font-size: 20px;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 50%;
+  background: #444;
+  padding: 20px;
+  height: 50%;
+}
+
+/* =======================
+   STATS & SKILLS
+======================= */
+.stats-skills {
+  padding: 80px 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.stat-box {
+  background: #f7f7f7;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.stat-box h3 {
+  font-size: 42px;
+  color: #ff2d55;
+}
+
+.skills h3 {
+  margin-bottom: 30px;
+}
+
+.skill {
+  margin-bottom: 25px;
+}
+
+.skill-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.progress {
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 10px;
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  background: #ff2d55;
+}
+
+/* =======================
+   PORTFOLIO
+======================= */
+/* =======================
+   PORTFOLIO FILTER BUTTONS
+======================= */
+.portfolio-filter {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.portfolio-filter button {
+  border: 1px solid #ddd;
+  background: transparent;
+  color: #333;
+  font-weight: 600;
+  margin: 0 8px;
+  cursor: pointer;
+  padding: 8px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.portfolio-filter button:hover {
+  background: #ff2d55;
+  color: #fff;
+  border-color: #ff2d55;
+}
+
+.portfolio-filter button.active {
+  background: #ff2d55;
+  color: #fff;
+  border-color: #ff2d55;
+}
+
+.portfolio {
+  padding: 80px 10%;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* =======================
+   TESTIMONIAL
+======================= */
+/* .testimonial {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.subtitle {
+  color: gray;
+  margin-bottom: 40px;
+}
+
+.testimonial-box img {
+  width: 100px;
+  border-radius: 50%; */
+/* } */
+.testimonial {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.testimonial-slider {
+  max-width: 800px;
+  margin: auto;
+}
+
+.testimonial-box {
+  background: #fff;
+  padding: 40px 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.testimonial-box img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.testimonial-box h3 {
+  margin: 10px 0 5px;
+}
+
+.testimonial-box p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* Slick dots */
+.slick-dots li button:before {
+  font-size: 10px;
+}
+
+/* =======================
+   LATEST NEWS
+======================= */
+.news {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.news-card {
+  background: #f7f7f7;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.news-card img {
+  width: 100%;
+}
+
+.news-card .date {
+  font-size: 14px;
+  color: #777;
+  margin: 15px;
+}
+
+.news-card h3 {
+  margin: 0 15px 20px;
+}
+
+/* =======================
+   CONTACT
+======================= */
+.contact {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #ff2d55;
+  color: #fff;
+  border: none;
+}
+
+/* =======================
+   FOOTER
+======================= */
+.footer {
+  background: #000;
+  color: #aaa;
+  padding: 50px 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.footer h3 {
+  color: #fff;
+}
+.footer-wraper{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-wraper .logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+}
+.quick-links{
+  display: flex;
+  flex-direction: column;
+}
+.quick-links a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.quick-links a:hover {
+  color: #007bff;
+}
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services-grid,
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-content{
+        display: flex;
+    flex-direction: column;
+  }
+
+  .stats-skills {
+    grid-template-columns: 1fr;
+  }
+  .footer{
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
