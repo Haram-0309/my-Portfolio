@@ -31,25 +31,20 @@
 - Mobile: Click hamburger menu to open navigation
 - Active page is highlighted in the navigation
 
-### 2. **Project Slider** (projects.html)
+### 2. **Project Slider** (service)
 - Click next/previous buttons to navigate
 - Click dot indicators to jump to specific slide
 - Use keyboard arrows (left/right) for navigation
 - Auto-rotates every 5 seconds (pauses on hover)
 
-### 3. **Contact Form** (contact.html)
+### 3. **Contact Form** (contact)
 - All required fields are marked with *
 - Real-time validation provides immediate feedback
 - Success message appears on successful submission
 - Form can be connected to backend service (see JavaScript comments)
 
-### 4. **Adding Your Content**
-
-#### Update Personal Information:
-1. **index.html**: Update hero section text
-2. **about.html**: Update experience, education, skills
-3. **contact.html**: Update contact information
-4. **projects.html**: Update project details
+#### need to be add 
+directorty for images and also use for script and css files
 
 #### Add Images:
 1. Place images in the `images/` folder
