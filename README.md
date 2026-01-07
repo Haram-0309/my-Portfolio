@@ -51,6 +51,8 @@ directorty for images and also use for script and css files
 2. Update image paths in HTML files
 3. Recommended: Optimize images for web
 
+## how to RUN and Deploye
+simple right click and open the server and for deployement use the netlify site and drag and drop the folder 
 ## Browser Compatibility
 1. **Chrome** (latest): ✅ Fully supported
 2. **Firefox** (latest): ✅ Fully supported
@@ -74,3 +76,4 @@ Modify CSS variables in `style.css`:
     --dark: #1e293b;
     --light: #f8fafc;
 }
+
